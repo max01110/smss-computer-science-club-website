@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CS Club</title>
+    <link rel='stylesheet' href='style.css'>
+    <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="banner">
+            <div class="app-text">
+
+
+                <p>Next meeting time is To Be Determined</p>
+                <p>Come back soon...</p>
+                <hr/>
+                
+              <!-- Display the countdown timer in an element -->
+<p id="counter">Loading...</p>
+<p>7th September, 2020</p>
+<script>
+var countDownDate = new Date("Sep 7, 2020 15:00:00").getTime();
+
+var x = setInterval(function() {
+
+  var now = new Date().getTime();
+
+  var distance = countDownDate - now;
+
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  document.getElementById("counter").innerHTML = "Approx. Launch in " + days + " days, " + hours + " hours,  "
+  + minutes + " minutes and " + seconds + " seconds ";
+
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("counter").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
+        </div>
+    </div>
+
+
+</body>
