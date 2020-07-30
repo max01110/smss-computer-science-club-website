@@ -224,3 +224,14 @@ a:hover {
 .button:hover {
     background-color: #555;
 }
+
+footer{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 10px;
+    width: 100%;
+    margin: 30px;
+    color: white;
+    font-size: 12px;
+}
