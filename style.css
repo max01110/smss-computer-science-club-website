@@ -82,6 +82,7 @@ body {
 }
 .app-picture {
     width: 40%;
+    margin-right: 10%;
     float: right;
 }
 
