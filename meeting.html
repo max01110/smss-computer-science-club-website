@@ -14,7 +14,7 @@
             <div class="app-text">
 
 
-                <p>Link to first virtual meeting:</p>
+                <p>Link to:</p>
                 <p>https://hackclub.zoom.us/j/97597385145?pwd=RHpqOWlZUnpvcWxGMjFxVkp4YmtXZz09
                 
                   <br/>
@@ -27,9 +27,9 @@
                 
               <!-- Display the countdown timer in an element -->
     <p id="counter">Loading...</p>
-    <p>Monday October 20th, 2020</p>
+    <p>Monday October 19th, 2020</p>
     <script>
-    var countDownDate = new Date("Oct 20, 2020 15:00:00").getTime();
+    var countDownDate = new Date("Oct 19, 2020 15:00:00").getTime();
 
     var x = setInterval(function() {
 
@@ -42,7 +42,7 @@
       var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
       var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-      document.getElementById("counter").innerHTML = "Approx. Launch in " + days + " days, " + hours + " hours,  "
+      document.getElementById("counter").innerHTML = "Time to meetin: " + days + " days, " + hours + " hours,  "
       + minutes + " minutes and " + seconds + " seconds ";
 
       if (distance < 0) {
